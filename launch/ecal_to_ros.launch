@@ -1,0 +1,110 @@
+<?xml version="0.0"?>
+<launch>
+  <group>
+    <arg name="sensor_id" value="0" />
+    
+    <node pkg="ecal_to_ros" name="eCAL_to_ROS_RadarStatus_$(arg sensor_id)" type="eCAL_to_ROS_RadarStatus_publisher" output="screen">
+      <param name="eCAL_param_radar_status_topic_name" value="RadarStatus_Sensor" type="string"/>
+      <param name="ROS_param_radar_status_topic_name" value="RadarStatus_$(arg sensor_id)" type="string"/>
+      <param name="Sensor_ID" value="$(arg sensor_id)"/>
+    </node>
+    
+    <node pkg="ecal_to_ros" name="eCAL_to_ROS_RadarDetectionImage_$(arg sensor_id)" type="eCAL_to_ROS_RadarDetectionImage_publisher" output="screen">
+      <param name="eCAL_param_radar_detection_image_near_topic_name" value="RDI_Near_Sensor" type="string"/>
+      <param name="ROS_param_radar_detection_image_near_topic_name" value="RadarDetectionImageNear_$(arg sensor_id)" type="string"/>
+      <param name="eCAL_param_radar_detection_image_far_topic_name" value="RDI_Far_Sensor" type="string"/>
+      <param name="ROS_param_radar_detection_image_far_topic_name" value="RadarDetectionImageFar_$(arg sensor_id)" type="string"/>
+      <param name="Sensor_ID" value="$(arg sensor_id)"/>
+    </node>
+  </group>
+  
+  <group>
+    <arg name="sensor_id" value="1" />
+    
+    <node pkg="ecal_to_ros" name="eCAL_to_ROS_RadarStatus_$(arg sensor_id)" type="eCAL_to_ROS_RadarStatus_publisher" output="screen">
+      <param name="eCAL_param_radar_status_topic_name" value="RadarStatus_Sensor" type="string"/>
+      <param name="ROS_param_radar_status_topic_name" value="RadarStatus_$(arg sensor_id)" type="string"/>
+      <param name="Sensor_ID" value="$(arg sensor_id)"/>
+    </node>
+    
+    <node pkg="ecal_to_ros" name="eCAL_to_ROS_RadarDetectionImage_$(arg sensor_id)" type="eCAL_to_ROS_RadarDetectionImage_publisher" output="screen">
+      <param name="eCAL_param_radar_detection_image_near_topic_name" value="RDI_Near_Sensor" type="string"/>
+      <param name="ROS_param_radar_detection_image_near_topic_name" value="RadarDetectionImageNear_$(arg sensor_id)" type="string"/>
+      <param name="eCAL_param_radar_detection_image_far_topic_name" value="RDI_Far_Sensor" type="string"/>
+      <param name="ROS_param_radar_detection_image_far_topic_name" value="RadarDetectionImageFar_$(arg sensor_id)" type="string"/>
+      <param name="Sensor_ID" value="$(arg sensor_id)"/>
+    </node>
+  </group>
+
+  <group>
+    <arg name="sensor_id" value="2" />
+    
+    <node pkg="ecal_to_ros" name="eCAL_to_ROS_RadarStatus_$(arg sensor_id)" type="eCAL_to_ROS_RadarStatus_publisher" output="screen">
+      <param name="eCAL_param_radar_status_topic_name" value="RadarStatus_Sensor" type="string"/>
+      <param name="ROS_param_radar_status_topic_name" value="RadarStatus_$(arg sensor_id)" type="string"/>
+      <param name="Sensor_ID" value="$(arg sensor_id)"/>
+    </node>
+    
+    <node pkg="ecal_to_ros" name="eCAL_to_ROS_RadarDetectionImage_$(arg sensor_id)" type="eCAL_to_ROS_RadarDetectionImage_publisher" output="screen">
+      <param name="eCAL_param_radar_detection_image_near_topic_name" value="RDI_Near_Sensor" type="string"/>
+      <param name="ROS_param_radar_detection_image_near_topic_name" value="RadarDetectionImageNear_$(arg sensor_id)" type="string"/>
+      <param name="eCAL_param_radar_detection_image_far_topic_name" value="RDI_Far_Sensor" type="string"/>
+      <param name="ROS_param_radar_detection_image_far_topic_name" value="RadarDetectionImageFar_$(arg sensor_id)" type="string"/>
+      <param name="Sensor_ID" value="$(arg sensor_id)"/>
+    </node>
+  </group>
+
+  <group>
+    <arg name="sensor_id" value="3" />
+    
+    <node pkg="ecal_to_ros" name="eCAL_to_ROS_RadarStatus_$(arg sensor_id)" type="eCAL_to_ROS_RadarStatus_publisher" output="screen">
+      <param name="eCAL_param_radar_status_topic_name" value="RadarStatus_Sensor" type="string"/>
+      <param name="ROS_param_radar_status_topic_name" value="RadarStatus_$(arg sensor_id)" type="string"/>
+      <param name="Sensor_ID" value="$(arg sensor_id)"/>
+    </node>
+    
+    <node pkg="ecal_to_ros" name="eCAL_to_ROS_RadarDetectionImage_$(arg sensor_id)" type="eCAL_to_ROS_RadarDetectionImage_publisher" output="screen">
+      <param name="eCAL_param_radar_detection_image_near_topic_name" value="RDI_Near_Sensor" type="string"/>
+      <param name="ROS_param_radar_detection_image_near_topic_name" value="RadarDetectionImageNear_$(arg sensor_id)" type="string"/>
+      <param name="eCAL_param_radar_detection_image_far_topic_name" value="RDI_Far_Sensor" type="string"/>
+      <param name="ROS_param_radar_detection_image_far_topic_name" value="RadarDetectionImageFar_$(arg sensor_id)" type="string"/>
+      <param name="Sensor_ID" value="$(arg sensor_id)"/>
+    </node>
+  </group>
+
+  <group>
+    <arg name="sensor_id" value="4" />
+    
+    <node pkg="ecal_to_ros" name="eCAL_to_ROS_RadarStatus_$(arg sensor_id)" type="eCAL_to_ROS_RadarStatus_publisher" output="screen">
+      <param name="eCAL_param_radar_status_topic_name" value="RadarStatus_Sensor" type="string"/>
+      <param name="ROS_param_radar_status_topic_name" value="RadarStatus_$(arg sensor_id)" type="string"/>
+      <param name="Sensor_ID" value="$(arg sensor_id)"/>
+    </node>
+    
+    <node pkg="ecal_to_ros" name="eCAL_to_ROS_RadarDetectionImage_$(arg sensor_id)" type="eCAL_to_ROS_RadarDetectionImage_publisher" output="screen">
+      <param name="eCAL_param_radar_detection_image_near_topic_name" value="RDI_Near_Sensor" type="string"/>
+      <param name="ROS_param_radar_detection_image_near_topic_name" value="RadarDetectionImageNear_$(arg sensor_id)" type="string"/>
+      <param name="eCAL_param_radar_detection_image_far_topic_name" value="RDI_Far_Sensor" type="string"/>
+      <param name="ROS_param_radar_detection_image_far_topic_name" value="RadarDetectionImageFar_$(arg sensor_id)" type="string"/>
+      <param name="Sensor_ID" value="$(arg sensor_id)"/>
+    </node>
+  </group>
+
+  <group>
+    <arg name="sensor_id" value="5" />
+    
+    <node pkg="ecal_to_ros" name="eCAL_to_ROS_RadarStatus_$(arg sensor_id)" type="eCAL_to_ROS_RadarStatus_publisher" output="screen">
+      <param name="eCAL_param_radar_status_topic_name" value="RadarStatus_Sensor" type="string"/>
+      <param name="ROS_param_radar_status_topic_name" value="RadarStatus_$(arg sensor_id)" type="string"/>
+      <param name="Sensor_ID" value="$(arg sensor_id)"/>
+    </node>
+    
+    <node pkg="ecal_to_ros" name="eCAL_to_ROS_RadarDetectionImage_$(arg sensor_id)" type="eCAL_to_ROS_RadarDetectionImage_publisher" output="screen">
+      <param name="eCAL_param_radar_detection_image_near_topic_name" value="RDI_Near_Sensor" type="string"/>
+      <param name="ROS_param_radar_detection_image_near_topic_name" value="RadarDetectionImageNear_$(arg sensor_id)" type="string"/>
+      <param name="eCAL_param_radar_detection_image_far_topic_name" value="RDI_Far_Sensor" type="string"/>
+      <param name="ROS_param_radar_detection_image_far_topic_name" value="RadarDetectionImageFar_$(arg sensor_id)" type="string"/>
+      <param name="Sensor_ID" value="$(arg sensor_id)"/>
+    </node>
+  </group>
+</launch>
